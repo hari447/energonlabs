@@ -1,0 +1,160 @@
+.page {
+  padding: 5rem 0;
+  background-color: var(--color-white);
+}
+.contact_address1 {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  gap: 0;
+  border: 1px solid #ebf7ff;
+  background-color: var(--color-white);
+  box-shadow: 21px 10px 40px rgba(235, 247, 255, 1);
+}
+.contact_address1_left {
+  padding: 4rem;
+}
+.contact_address1_left h3 {
+  color: var(--color-secondary);
+  margin: 0 0 2rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+.contact_address1_left ul {
+}
+.contact_address1_left ul li {
+  padding-left: 4rem;
+  font-size: 2rem;
+  line-height: 1.8;
+  color: var(--color-dark);
+  margin-bottom: 2rem;
+  position: relative;
+}
+.contact_address1_left ul li img {
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 1rem;
+}
+.contact_address1 iframe {
+  width: 100%;
+  display: block;
+  border: 0;
+  height: 38rem;
+}
+.careers_form {
+  position: relative;
+  width: 100%;
+  padding: 5rem 0;
+  background-color: #ebf7ff;
+}
+.heading-secondary {
+  line-height: 1.3;
+  color: var(--color-secondary);
+  font-weight: 400;
+  font-size: 4.2rem;
+  margin-bottom: 2rem;
+}
+.careers_form p {
+  margin-bottom: 2rem;
+  margin-top: -1rem;
+}
+.text-center {
+  text-align: center;
+}
+.careers_form .grid {
+  gap: 1rem;
+  display: grid;
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.careers_form .form-group {
+  max-width: 100rem;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+.careers_form .form-group input.form-control,
+.careers_form .form-group textarea.form-control {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  color: var(--color-dark);
+  background-color: var(--color-white);
+  font-size: 1.5rem;
+  width: 100%;
+  height: 6rem;
+  line-height: 1;
+  font-weight: 500;
+  padding: 1rem 2rem;
+}
+.careers_form .form-group textarea.form-control {
+  height: 12rem;
+  padding-top: 2rem;
+}
+.form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: var(--color-dark);
+}
+.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: var(--color-dark);
+}
+.form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: var(--color-dark);
+}
+.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: var(--color-dark);
+}
+.form-group .grid-full {
+  grid-column: 1 / span 3;
+}
+.careers_form .form-group button {
+  height: auto;
+  line-height: normal;
+  padding: 0.8rem 1.5rem;
+  color: var(--color-white);
+  margin-top: 0;
+  font-weight: 400;
+  background: var(--color-gradient2);
+  font-size: 1.6rem;
+  border-radius: 3rem;
+  display: inline-flex;
+  text-decoration: none;
+  align-items: center;
+  gap: 1rem;
+  border: 0;
+  cursor: pointer;
+}
+.careers_form .form-group button:hover {
+  background: var(--color-gradient1);
+}
+
+@media screen and (max-width: 60em) {
+  .contact_address1,
+  .grid--3-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .form-group .grid-full {
+    grid-column: 1;
+  }
+  .heading-secondary {
+    font-size: 3.2rem;
+  }
+  .careers_form,
+  .page {
+    padding: 3rem 2rem;
+  }
+  .contact_address1_left {
+    padding: 2rem;
+  }
+  .contact_address1_left ul li {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  .contact_address1_left h3 {
+    font-size: 1.8rem;
+  }
+}

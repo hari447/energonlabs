@@ -1,0 +1,43 @@
+.Welcome {
+  padding: 6rem 0;
+  width: 100%;
+}
+.Welcome_grid {
+  display: grid;
+  grid-template-columns: 35fr 65fr;
+  gap: 5rem;
+  align-items: center;
+}
+.Welcome_grid_reverse {
+  margin-top: 5rem;
+  direction: rtl;
+  text-align: left;
+}
+.Welcome_grid h2 {
+  font-size: 4.2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-secondary);
+  margin-bottom: 2rem;
+}
+.Welcome_grid p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+.Welcome_grid img {
+  width: 100%;
+  display: block;
+  box-shadow: var(--box-shadow1);
+}
+
+@media only screen and (max-width: 60em) {
+  .Welcome {
+    padding: 4rem 2rem;
+  }
+  .Welcome_grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Welcome_grid h2 {
+    font-size: 2.4rem;
+  }
+}

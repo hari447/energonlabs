@@ -1,0 +1,111 @@
+.Hero,
+.Innerpg-Hero {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.Hero::before,
+.Innerpg-Hero::before {
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  height: 100%;
+  content: "";
+  z-index: 9;
+  opacity: 0.75;
+  background: var(--color-gradient1);
+}
+.Hero > img {
+  width: 100%;
+  display: none;
+  height: 65rem;
+  object-fit: cover;
+  object-position: center center;
+}
+video {
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  height: 65rem;
+}
+.Innerpg-Hero img {
+  width: 100%;
+  display: block;
+}
+.Innerpg-Hero video {
+  display: none;
+}
+.Hero-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  display: grid;
+  align-items: center;
+}
+.Hero-content-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  align-items: center;
+}
+.Hero-content h2 {
+  font-size: 8.6rem;
+  margin: 0 0 3rem;
+  line-height: 1.1;
+  font-weight: 300;
+  text-align: left;
+  color: var(--color-white);
+}
+.Innerpg-Hero .Hero-content h2 {
+  font-size: 6rem;
+  margin-bottom: 0;
+}
+.Hero-content h2 span {
+  color: var(--color-primary);
+  font-weight: 400;
+}
+.Hero-content p {
+  color: var(--color-white);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+  width: 85%;
+  border-top: 1px solid var(--color-white);
+  padding-top: 2rem;
+}
+.Innerpg-Hero .Hero-content p {
+  display: none;
+}
+.Hero-content-grid img {
+  width: 100%;
+  display: block;
+}
+.Innerpg-Hero .Hero-content-grid img {
+  display: none;
+}
+@media only screen and (max-width: 60em) {
+  .Hero-content-grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem 3rem;
+  }
+  .Hero-content h2 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  .Innerpg-Hero .Hero-content h2 {
+    font-size: 3.2rem;
+    font-weight: 600;
+  }
+  .Hero-content p {
+    width: 100%;
+  }
+  .Hero > img {
+    height: 55rem;
+  }
+}
